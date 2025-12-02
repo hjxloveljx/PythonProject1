@@ -3,21 +3,21 @@ from app.config import settings
 from app.rag.vectorstore import get_vectorstore
 from langchain_community.chat_models import ChatOpenAI
 
-def get_llm():
-    return ChatOpenAI(
-        model=settings.model_name,
-        api_key=settings.openai_api_key,
-        temperature=0.2,
-        streaming=True,
-        base_url=settings.base_url,
-    )
 # def get_llm():
 #     return ChatOpenAI(
-#         model="deepseek-chat",
-#         openai_api_key=settings.openai_api_key,
-#         openai_api_base="https://api.deepseek.com",
-#         temperature=0,
+#         model=settings.model_name,
+#         api_key=settings.openai_api_key,
+#         temperature=0.2,
+#         streaming=True,
+#         base_url=settings.base_url,
 #     )
+def get_llm():
+    return ChatOpenAI(
+        model="deepseek-chat",
+        openai_api_key=settings.openai_api_key,
+        openai_api_base="https://api.deepseek.com",
+        temperature=0,
+    )
 # def get_embeddings():
 #     return OpenAIEmbeddings(
 #     api_key=settings.openai_api_key,
