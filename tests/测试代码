@@ -1,0 +1,10 @@
+14. 测试
+python -m app.ingestion.build_index
+
+uvicorn app.main:app --reload --port 8002
+
+curl -X POST http://127.0.0.1:8002/chat \
+  -H "Content-Type: application/json" \
+  -d '{"text":"年假怎么申请？","user_role":"public"}'
+
+测试的时候如果出现Internal Server Error错误，立刻去代码里看输出，一定是Python代码报错了。

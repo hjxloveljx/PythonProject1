@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王者荣耀 - 官方网站（模拟）</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: "Helvetica Neue", Arial, sans-serif; background: #0a0a0a; color: #f5f5f5; }
+        a { color: inherit; text-decoration: none; }
+        header { background: url('https://game.gtimg.cn/images/yxzj/web202208/bg-banner.jpg') center/cover no-repeat; height: 480px; position: relative; }
+        header::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
+        .nav { position: absolute; top: 0; width: 100%; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
+        .logo { font-size: 26px; font-weight: bold; letter-spacing: 2px; }
+        .nav-links { display: flex; gap: 28px; font-size: 16px; }
+        .hero { position: relative; z-index: 2; top: 150px; margin-left: 60px; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 420px; line-height: 1.6; margin-bottom: 30px; }
+        .hero button { background: linear-gradient(120deg,#f6d365,#fda085); border: none; border-radius: 30px; padding: 14px 36px; font-size: 16px; cursor: pointer; color: #1a1a1a; font-weight: bold; }
+        main { padding: 60px; background: #111; }
+        .section-title { font-size: 28px; margin-bottom: 24px; border-left: 4px solid #f0b90b; padding-left: 12px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 24px; }
+        .card { background: #1b1b1b; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.35); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-6px); }
+        .card img { width: 100%; height: 160px; object-fit: cover; }
+        .card-content { padding: 18px; }
+        .card-content h3 { margin-bottom: 10px; font-size: 18px; color: #fdd56a; }
+        .card-content p { font-size: 14px; line-height: 1.5; color: #ccc; }
+        .esports, .heroes { margin-top: 60px; }
+        .esports-list { display: flex; flex-wrap: wrap; gap: 16px; }
+        .tag { background: rgba(255,255,255,0.08); padding: 10px 18px; border-radius: 999px; font-size: 14px; }
+        .hero-gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 20px; }
+        .hero-card { background: #1c1c1c; padding: 18px; border-radius: 12px; text-align: center; }
+        .hero-card img { width: 100%; height: 140px; object-fit: cover; border-radius: 10px; margin-bottom: 12px; }
+        footer { background: #080808; padding: 30px 60px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; font-size: 14px; color: #888; }
+        footer ul { display: flex; gap: 20px; list-style: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">王者荣耀 · 模拟官网</div>
+            <div class="nav-links">
+                <a href="#news">最新资讯</a>
+                <a href="#heroes">英雄资料</a>
+                <a href="#esports">赛事中心</a>
+                <a href="#downloads">下载游戏</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>荣耀新篇章 · S35赛季全面开启</h1>
+            <p>体验东方幻想与顶尖战术交锋，参与峡谷嘉年华活动，解锁限定皮肤、全新玩法与海量福利。</p>
+            <button>立即下载</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="news">
+            <h2 class="section-title">最新资讯</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/card-hero.jpg" alt="新英雄海报">
+                    <div class="card-content">
+                        <h3>新英雄·淬刃上线</h3>
+                        <p>定位刺客，具备高爆发真伤能力，搭配迅捷身法，适合快速切入与收割。</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/card-event.jpg" alt="活动图">
+                    <div class="card-content">
+                        <h3>峡谷盛典限时活动</h3>
+                        <p>完成每日挑战领取积分，可兑换史诗皮肤和动态头像框，邀请好友还能额外加成。</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/card-esports.jpg" alt="赛事图">
+                    <div class="card-content">
+                        <h3>KPL 春季赛总决赛</h3>
+                        <p>StarPro 与 Wolves 决战在即，现场舞美升级，冠军专属皮肤同步揭晓。</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/card-skins.jpg" alt="皮肤图">
+                    <div class="card-content">
+                        <h3>限定皮肤返场</h3>
+                        <p>周年限定重新上架，支持心愿投票，玩家可从 6 款人气皮肤中任选其一。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="esports" class="esports">
+            <h2 class="section-title">赛事中心</h2>
+            <div class="esports-list">
+                <span class="tag">KPL 春季赛</span>
+                <span class="tag">世界冠军杯</span>
+                <span class="tag">高校联赛</span>
+                <span class="tag">城市赛</span>
+                <span class="tag">主播争霸</span>
+            </div>
+        </section>
+
+        <section id="heroes" class="heroes">
+            <h2 class="section-title">热门英雄</h2>
+            <div class="hero-gallery">
+                <div class="hero-card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/hero-liubang.jpg" alt="刘邦">
+                    <h3>刘邦 · 双剑合璧</h3>
+                    <p>坦克/辅助 · 团控与护盾兼备，擅长支援与保护。</p>
+                </div>
+                <div class="hero-card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/hero-yingzheng.jpg" alt="嬴政">
+                    <h3>嬴政 · 千古一帝</h3>
+                    <p>法师 · 远程消耗与大范围爆发，善于团战压制。</p>
+                </div>
+                <div class="hero-card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/hero-lubanfather.jpg" alt="鲁班大师">
+                    <h3>鲁班大师 · 奥义重构</h3>
+                    <p>辅助 · 独特位移链，带来灵活的控制与切入。</p>
+                </div>
+                <div class="hero-card">
+                    <img src="https://game.gtimg.cn/images/yxzj/web202310/hero-naike.jpg" alt="哪吒">
+                    <h3>哪吒 · 次元突破</h3>
+                    <p>战士 · 大招全球支援，打破僵局的强力开团点。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="downloads" style="margin-top: 60px;">
+            <h2 class="section-title">客户端下载</h2>
+            <p style="color:#bbb; margin-bottom: 20px;">支持 iOS / Android / PC 模拟器，扫码即可极速下载。</p>
+            <img src="https://game.gtimg.cn/images/yxzj/web202208/qrcode.png" alt="下载二维码" style="width:160px;height:160px;border-radius:12px;">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 王者荣耀模拟站 · 本页面仅供示例展示</p>
+        <ul>
+            <li><a href="#">隐私政策</a></li>
+            <li><a href="#">用户协议</a></li>
+            <li><a href="#">家长监护</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
