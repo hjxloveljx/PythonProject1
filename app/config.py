@@ -6,7 +6,7 @@ load_dotenv()
 
 class Settings(BaseModel):
     base_url: str = "http://api.deepseek.com/v1"
-    openai_api_key: str = os.getenv("DEEPSEEK_API_KEY", "sk-122f5ca1afce44f7a8375b6507c76fc1")
+    openai_api_key: str = os.getenv("DEEPSEEK_API_KEY", "")
     model_name: str = os.getenv("MODEL_NAME", "deepseek-chat")
     chroma_dir: str = os.getenv("CHROMA_DIR", "./data/chroma")
     chroma_host: str = os.getenv("CHROMA_HOST", "localhost")
